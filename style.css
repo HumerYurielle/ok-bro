@@ -1,0 +1,272 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe6e9;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #ff6f91;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #fff1f3;
+    border-radius: 10px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #e65d7b;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbar a {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Services Section */
+.services-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.services-section .header {
+    margin-bottom: 20px;
+}
+
+.services-section .description {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.services-section .main-image img {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+/* Packages Section */
+.packages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.package {
+    background-color: #fff1f3;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 280px;
+    text-align: left;
+}
+
+.package img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Responsive Packages */
+@media (max-width: 768px) {
+    .packages {
+        flex-direction: column;
+        align-items: center;
+    }
+    .package {
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .package {
+        width: 45%;
+    }
+}
+
+/* Book Now Section */
+.book-now-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.book-now-section .text-content {
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.book-now-section .book-now-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .book-now-section {
+        flex-direction: column;
+    }
+
+    .book-now-section .book-now-image img {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+/* Booking Form */
+.booking-form {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.booking-form form {
+    display: inline-block;
+    text-align: left;
+    max-width: 500px;
+    width: 100%;
+}
+
+.booking-form input[type="text"],
+.booking-form input[type="email"],
+.booking-form input[type="date"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.submit-btn {
+    background-color: #ff6f91;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.submit-btn:hover {
+    background-color: #e65d7b;
+}
+
+/* Gallery Section */
+.gallery {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.gallery .gallery-title img {
+    margin-top: 20px;
+    width: 200px;
+}
+
+.gallery-content {
+    padding: 20px 0;
+}
+
+.gallery-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery-row img {
+    width: 45%;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .gallery-row img {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #ff6f91;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.footer .footer-icon img {
+    width: 90px;
+    margin-right: 15px;
+}
+
+.footer .footer-phone {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.footer .footer-phone img {
+    width: 70px;
+    margin-right: 10px;
+}
+
+.footer-phone p {
+    margin: 0;
+}
+
+/* Responsive Design */
+
+/* Desktop */
+@media (min-width: 1025px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 20px 50px;
+    }
+    
+    .packages {
+        justify-content: space-between;
+    }
+
+    .package {
+        width: 30%;
+    }
+
+    .book-now-section {
+        flex-direction: row;
+    }
+    
+    .gallery-row img {
+        width: 30%;
+    }
+}
